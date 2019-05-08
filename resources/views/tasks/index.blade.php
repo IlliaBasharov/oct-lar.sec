@@ -56,6 +56,15 @@
 			    </button>
 			</form>
 		    </td>
+		    <td>
+			<form method="post" action="{{url('tasks/'.$task->id)}}/edit">
+			    {{csrf_field()}}
+			    {{method_field('get')}}
+			    <button type="submit" class="btn btn-default bg-success">
+				 Редактировать
+			    </button>
+			</form>
+		    </td>
 		</tr>
 		@endforeach
 	    </tbody>
