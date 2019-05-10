@@ -32,5 +32,6 @@ Route::delete('/tasks/{task}', function(Request $request, Task $task) {
 
 Route::get('/tasks/{task}/edit',function(Task $task){
     
+    return view('tasks.edit');
     
 });
